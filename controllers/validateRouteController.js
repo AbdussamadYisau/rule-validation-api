@@ -52,7 +52,7 @@ exports.isRuleValid = (req,res,next) => {
 exports.isDataValid = (req,res,next) => {
     const {data} = req.body;
 
-    if((typeof data === 'object' || 'string')  && isArray(data)) {
+    if((typeof data === 'object' || 'string')  || isArray(data)) {
        next();
     } else {
         return res.status(400).json({
