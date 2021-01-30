@@ -1,11 +1,16 @@
-const express = require('express');
-const validateRouteController = require('../controllers/validateRouteController');
-const bodyParser = require('body-parser');
+const express = require("express");
+const validateRouteController = require("../controllers/validateRouteController");
+const bodyParser = require("body-parser");
 const router = express.Router();
 
 // Post /validate-rule
 router.use(bodyParser.json());
 // router.use(bodyParser.)
-router.post('/validate-rule', validateRouteController.validateRoute);
+router.post(
+  "/validate-rule",
+  validateRouteController.requiredRoute,
+  validateRouteController.isRuleValid,
+  validateRouteController.isDataValid
+);
 
 module.exports = router;

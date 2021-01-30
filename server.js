@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const base = require('./routes/baseRoute');
+const baseRoute = require('./routes/baseRoute');
+const validateRoute = require('./routes/validateRoute');
 const app = express();
 
 
@@ -15,8 +16,9 @@ app.use((req,res,next) => {
 });
 
 
-// Base Route
-app.use(base);
+//Routes
+app.use(baseRoute);
+app.use(validateRoute);
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 8080, () => {
