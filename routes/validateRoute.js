@@ -8,9 +8,10 @@ router.use(bodyParser.json());
 // router.use(bodyParser.)
 router.post(
   "/validate-rule",
-  validateRouteController.requiredRoute,
+  validateRouteController.requiredFields,
   validateRouteController.isRuleValid,
-  validateRouteController.isDataValid
+  validateRouteController.isDataValid,
+  validateRouteController.requiredRouteFields
 );
 
 module.exports = router;
