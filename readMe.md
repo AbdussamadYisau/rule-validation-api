@@ -1,8 +1,6 @@
 # Rule Validation API
 
-This API serves as a service integration to a [public API](https://api.exchangeratesapi.io/latest) and exposing a RESTful endpoint. The endpoint will accept requests and returns a modified response schema from the integrated API.
-
-
+Built a simple rule validation API. Structured the response after the popular JSEND pattern.
 
 ## Link to deployed API and screenshots
 
