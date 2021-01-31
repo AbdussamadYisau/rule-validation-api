@@ -18,6 +18,6 @@ Built a simple rule validation API. Structured the response after the popular JS
 ![Screenshot of Website at work](https://github.com/AbdussamadYisau/rule-validation-api/blob/master/assets/successJsonReq.png)
 
 1. Success Response
-![Screenshot of Website at work](https://github.com/AbdussamadYisau/rule-validation-api/blob/master/assets/successJsonRes.png)
+![Screenshot of Website at work](https://github.com/AbdussamadYisau/rule-validation-api/blob/master/assets/SuccessJsonRes.png)
 
 
