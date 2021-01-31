@@ -11,7 +11,8 @@ router.post(
   validateRouteController.requiredFields,
   validateRouteController.isRuleValid,
   validateRouteController.isDataValid,
-  validateRouteController.requiredRouteFields
+  validateRouteController.requiredRuleFields,
+  validateRouteController.conditionChecker
 );
 
 module.exports = router;
